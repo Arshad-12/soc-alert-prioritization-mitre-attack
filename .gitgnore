@@ -1,0 +1,24 @@
+cat > .gitignore << 'EOF'
+# Large data files
+data/*.csv
+data/*.npy
+data/*.index
+data/embedding_results/*.csv
+
+# Keep these important files
+!data/mitre_techniques.pkl
+!data/tactic_classifier.pkl
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+venv/
+*.egg-info/
+
+# System
+.DS_Store
+*.log
+uploads/
+EOF
